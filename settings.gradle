@@ -1,5 +1,5 @@
 rootProject.name = 'multiproject'
 include 'spring-pjt'
 include 'spring-pjt:spring-a'
-findProject(':spring-pjt:spring-a')?.name = 'spring-a'
+include 'spring-pjt:spring-b'
 
