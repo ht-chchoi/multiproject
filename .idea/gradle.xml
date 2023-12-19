@@ -9,7 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/spring-pjt" />
-            <option value="$PROJECT_DIR$/sub_a" />
+            <option value="$PROJECT_DIR$/spring-pjt/spring-a" />
+            <option value="$PROJECT_DIR$/spring-pjt/spring-b" />
           </set>
         </option>
       </GradleProjectSettings>
