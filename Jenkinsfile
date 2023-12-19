@@ -16,7 +16,7 @@ pipeline {
         script {
           projectPath = targetProject.replaceAll(":", "/")
           sh "echo Project path: $projectPath"
-          version_value = sh(returnStdout: true, script: "cat build.gradle.kts | grep -o 'version = [^,]*'").trim()
+          version_value = sh(returnStdout: true, script: "cat $projectPath/build.gradle | grep -o 'version = [^,]*'").trim()
           sh "echo Project in version value: $version_value"
           version = version_value.split(/=/)[1].trim().split(/"/)[1].trim()
           sh "echo final version: $version"
